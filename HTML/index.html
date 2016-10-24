@@ -1,6 +1,40 @@
-<html>
+<!DOCTYPE html>
+<html lang="de">
 	<head>
+		<meta charset="utf-8"/>
+		<link href= "bootstrap/css/bootstrap.min.css" rel ="stylesheet">
+		<title>Kostenabschätzung</title>
 	</head>
 	<body>
+		<form action= "kostenpunkt.php">
+			<div class ="form group">
+				<label for="flach" class="col-sm-2 control-label">Fläche je Stockwerk in qm:</label> 
+				 <div class="col-sm-10">
+					<input type= "text" id= "flach" name= "flach"><p>
+				</div>
+			</div>
+			<p>Stockwerkwerkshöhe in m: <input type= "text" name= "hoch"><p>
+			<p>Anzahl Stockwerke: <input type= "text" name= "viel"><p>
+			
+			<p>Baujahr des Sanierungsobjekts/letzte Sanierung</p>
+			<fieldset>
+				<input type= "radio" id = "1950" name "baujahr" value="1" checked>
+					<label for= "1950">vor 1950</label></br>
+				<input type= "radio" id = "1977" name "baujahr" value="2">	
+					<label for= "1977">vor 1977</label></br>
+				<input type= "radio" id = "1987" name "baujahr" value="3">	
+					<label for= "1987">vor 1987</label></br>
+				<input type= "radio" id = "1998" name "baujahr" value="4">	
+					<label for= "1998">vor 1998</label></br>
+				<input type= "radio" id = "2002" name "baujahr" value="5">	
+					<label for= "2002">vor 2002</label></br>
+				<input type= "radio" id = "2009" name "baujahr" value="6">	
+					<label for= "2009">vor 2009</label>
+			</fieldset>
+			
+			<input type= "button" name="Absenden" value = "Absenden">
+			<input type= "button" name="Zurücksetzen" value = "Zurücksetzen">
+		</form>
+	
 	</body>
 </html>
